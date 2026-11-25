@@ -1,0 +1,347 @@
+/* Portfolio refinements for Kunyang (Emma) Gou.
+   Loaded after the original HTML5 UP theme to preserve its responsive layout. */
+
+:root {
+    --portfolio-navy: #142b45;
+    --portfolio-navy-deep: #0d1e32;
+    --portfolio-teal: #39b7a6;
+    --portfolio-teal-dark: #218f83;
+    --portfolio-ink: #344556;
+    --portfolio-muted: #657585;
+    --portfolio-line: #e3eaf0;
+}
+
+body {
+    background-color: var(--portfolio-navy-deep);
+    background-image:
+        linear-gradient(135deg, rgba(20, 43, 69, 0.98), rgba(25, 64, 83, 0.96));
+    color: rgba(255, 255, 255, 0.82);
+}
+
+a {
+    color: var(--portfolio-teal-dark);
+}
+
+a:hover {
+    color: #167a70;
+}
+
+#header.alt {
+    padding-top: 5.5em;
+    padding-bottom: 3em;
+}
+
+#header h1 {
+    color: #ffffff;
+    letter-spacing: -0.035em;
+}
+
+#header .tagline {
+    max-width: 50em;
+    margin: 0 auto 1.35em auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.12em;
+    letter-spacing: 0;
+}
+
+#header .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.45em 1.4em;
+    margin: 1.25em 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.92em;
+}
+
+#header .contact-links li {
+    margin: 0;
+    padding: 0;
+}
+
+#header .contact-links a {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.45);
+}
+
+#header .contact-links a:hover {
+    color: #8ce3d7;
+}
+
+#nav {
+    background-color: #f7fafc;
+}
+
+#nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25em;
+}
+
+#nav ul li {
+    margin: 0;
+}
+
+#nav ul li a {
+    padding: 0 0.95em;
+    color: #46596a;
+    font-size: 0.9em;
+}
+
+#nav ul li a.active {
+    background-color: #dff4f0;
+    color: var(--portfolio-navy);
+}
+
+#nav ul li a:hover {
+    background-color: #eaf5f4;
+    color: var(--portfolio-navy);
+}
+
+#main {
+    background-color: #ffffff;
+    color: var(--portfolio-ink);
+}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6,
+#main strong,
+#main b {
+    color: var(--portfolio-navy);
+}
+
+#main p,
+#main li {
+    color: var(--portfolio-ink);
+}
+
+#main a {
+    color: var(--portfolio-teal-dark);
+    border-bottom-color: rgba(33, 143, 131, 0.35);
+}
+
+#main a:hover {
+    color: var(--portfolio-navy);
+}
+
+#main > .main {
+    padding-top: 4.2em;
+    padding-bottom: 3.4em;
+}
+
+#main header.major h2:after {
+    background-color: var(--portfolio-teal);
+}
+
+#main header.major p {
+    color: var(--portfolio-muted);
+    font-size: 1.05em;
+}
+
+#main .lead {
+    color: var(--portfolio-navy);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#main .spotlight .image {
+    border-color: #dce8ed;
+}
+
+#main .spotlight .image img {
+    width: 15.5em;
+}
+
+#main .button {
+    box-shadow: inset 0 0 0 1px #c9d9df;
+    color: var(--portfolio-navy) !important;
+}
+
+#main .button:hover {
+    background-color: #e9f6f3;
+    box-shadow: inset 0 0 0 1px var(--portfolio-teal);
+}
+
+#main .button.primary {
+    background-color: var(--portfolio-teal-dark);
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+#main .button.primary:hover {
+    background-color: var(--portfolio-navy);
+}
+
+.experience-item,
+.education-item,
+.credential-item {
+    padding: 0 0 1.35em 0;
+    margin: 0 0 1.45em 0;
+    border-bottom: 1px solid var(--portfolio-line);
+}
+
+.experience-item:last-of-type,
+.education-item:last-of-type,
+.credential-item:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.experience-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.experience-heading h3,
+.education-item h3,
+.credential-item h3 {
+    margin-bottom: 0.35em;
+    font-size: 1.12em;
+}
+
+.experience-heading .date {
+    flex-shrink: 0;
+    color: var(--portfolio-muted);
+    font-size: 0.88em;
+    font-weight: 600;
+}
+
+.organization {
+    margin-bottom: 0.65em;
+    color: var(--portfolio-muted) !important;
+    font-size: 0.95em;
+}
+
+.experience-item ul {
+    margin-bottom: 0;
+}
+
+.experience-item li {
+    margin-bottom: 0.35em;
+}
+
+.expertise-grid {
+    margin-top: 1.5em;
+}
+
+.expertise-grid li {
+    padding: 1.25em 1.1em;
+    border: 1px solid var(--portfolio-line);
+    border-radius: 0.5em;
+    background: #fbfdfe;
+}
+
+.expertise-grid li h3 {
+    margin: 0.5em 0;
+    font-size: 1.05em;
+}
+
+.expertise-grid li p {
+    margin-bottom: 0;
+    font-size: 0.92em;
+}
+
+.expertise-grid .icon.major {
+    color: var(--portfolio-teal-dark);
+    border-color: #cde9e4;
+    box-shadow: inset 0 0 0 1px #cde9e4;
+}
+
+.skills-panel {
+    margin-top: 2em;
+    padding: 1.5em 1.7em 1em;
+    border-left: 4px solid var(--portfolio-teal);
+    border-radius: 0.25em;
+    background: #f3f8fa;
+}
+
+.skills-panel h3 {
+    margin-bottom: 0.8em;
+}
+
+.skills-panel p {
+    margin-bottom: 0.65em;
+}
+
+.small-note {
+    color: var(--portfolio-muted) !important;
+    font-size: 0.88em;
+}
+
+.privacy-note {
+    margin-top: 1.5em;
+    padding: 1em 1.2em;
+    border-radius: 0.35em;
+    background: #f3f8fa;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact .contact-location {
+    margin-top: 1.2em;
+    color: var(--portfolio-muted) !important;
+    font-size: 0.9em;
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 736px) {
+    #header.alt {
+        padding: 4em 1.5em 2.5em;
+    }
+
+    #header .tagline {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    #header .contact-links {
+        display: block;
+        line-height: 2;
+    }
+
+    #header .contact-links li {
+        display: block;
+    }
+
+    #nav ul li a {
+        padding: 0 0.65em;
+        font-size: 0.82em;
+    }
+
+    .experience-heading {
+        display: block;
+    }
+
+    .experience-heading .date {
+        display: block;
+        margin: 0.1em 0 0.6em;
+    }
+
+    #main .spotlight .image img {
+        width: 12em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav ul li a {
+        padding: 0 0.5em;
+        font-size: 0.76em;
+    }
+
+    .skills-panel {
+        padding: 1.1em 1.2em 0.7em;
+    }
+}
